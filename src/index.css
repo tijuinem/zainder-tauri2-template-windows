@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-zainder-navy: #002a5b;
+  --color-zainder-cyan: #25b0ae;
+  --color-zainder-dark: #001733;
+  --color-zainder-light: #f0fdfa;
+  --color-zeltavia-navy: #002a5b;
+  --color-zeltavia-cyan: #25b0ae;
+  --color-zeltavia-dark: #001733;
+  --color-zeltavia-light: #f0fdfa;
+}
+
+:root {
+  --navy: #002a5b;
+  --cyan: #25b0ae;
+}
+
+html.text-size-small {
+  font-size: 16px;
+}
+
+html.text-size-standard {
+  font-size: 18px;
+}
+
+html.text-size-large,
+html.text-size-xlarge {
+  font-size: 20px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* ==========================================================================
+   Dark mode (Active ONLY when user selects Dark Mode)
+   Styled to match the "Créditos & Versión" midnight navy look
+   ========================================================================== */
+html.dark body {
+  background-color: #060b14 !important;
+  color: #f1f5f9 !important;
+}
+
+html.dark header {
+  background-color: rgba(12, 21, 39, 0.95) !important;
+  border-color: #1e293b !important;
+}
+
+html.dark .bg-white {
+  background-color: #0c1527 !important;
+  color: #f1f5f9 !important;
+  border-color: #1e293b !important;
+}
+
+html.dark .bg-slate-50 {
+  background-color: #09101f !important;
+}
+
+html.dark .bg-slate-100 {
+  background-color: #111e38 !important;
+  color: #f1f5f9 !important;
+  border-color: #1e293b !important;
+}
+
+html.dark .bg-sky-50 {
+  background-color: #0e2246 !important;
+  color: #38bdf8 !important;
+}
+
+html.dark .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+html.dark .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-slate-700 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+html.dark .text-slate-500 {
+  color: #64748b !important;
+}
+
+html.dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+html.dark .border-slate-200 {
+  border-color: #1e293b !important;
+}
+
+html.dark .border-slate-100 {
+  border-color: #17243c !important;
+}
+
+/* High Contrast Mode: Black background & Glowing yellow borders */
+html.high-contrast body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+html.high-contrast header,
+html.high-contrast .bg-white,
+html.high-contrast .bg-slate-50,
+html.high-contrast .bg-slate-100 {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #facc15 !important;
+}
+
+html.high-contrast .border-slate-200,
+html.high-contrast .border-slate-300,
+html.high-contrast .border-slate-100,
+html.high-contrast .border-slate-800 {
+  border-color: #facc15 !important;
+}
+
+html.high-contrast .text-slate-900,
+html.high-contrast .text-slate-800,
+html.high-contrast .text-slate-700,
+html.high-contrast .text-slate-600 {
+  color: #ffffff !important;
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #060b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #25b0ae;
+}

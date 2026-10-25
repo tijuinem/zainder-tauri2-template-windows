@@ -1,0 +1,7 @@
+{
+  "name": "ZAINDER — Plantilla Profesional de Aplicación de Escritorio",
+  "description": "Plantilla base de alto rendimiento para software de escritorio en Windows con Tauri v2, Rust y React. Incluye modo frameless, selectores nativos, persistencia en AppData, notificaciones y consola de logs.",
+  "requestFramePermissions": ["CAMERA_MICROPHONE"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
